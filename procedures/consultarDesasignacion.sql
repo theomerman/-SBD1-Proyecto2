@@ -9,8 +9,21 @@ CREATE PROCEDURE consultarDesasignacion(
     seccion_in VARCHAR(1)
 )
 BEGIN
-
 	DECLARE X INT;
+
+	declare err varchar(100);
+    
+    if not exists (select codigo_curso 
+    from CURSO
+    WHERE codigo_curso_in = codigo_curso) then
+    set err = "El curso no existe";
+    select err;
+    elseif (ciclo_in != "1S" and ciclo_in != "2S" and ciclo_in != "VJ" and ciclo_in != "VD") then
+    set err = "El ciclo no existe";
+    select err;
+    else
+
+
     SELECT count(*) into X
     FROM CURSO_DESASIGNADO D
     INNER JOIN CURSO_HABILITADO C
@@ -41,7 +54,8 @@ BEGIN
     WHERE codigo_curso_in = C.CURSO_codigo_curso
     AND ciclo_in = S.ciclo
     AND año_in = YEAR(S.año)
-    AND seccion_in = S.seccion
+    AND seccion_in = S.seccion;
+    end if
     
     
     ;

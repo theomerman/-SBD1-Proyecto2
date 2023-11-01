@@ -78,62 +78,62 @@ SELECT crearCurso(425,'Curso Electronica 5',16,4,4,true);
 
 
 
--- Habilitar cursos --
+-- -- Habilitar cursos --
 
-SELECT habilitarCurso(0006,"VD",1,150,"A");
-SELECT habilitarCurso(0006,"VD",1,150,"B");
-SELECT habilitarCurso(0006,"VD",2,150,"d");
-SELECT habilitarCurso(0006,"VD",3,150,"e");
-SELECT habilitarCurso(0007,"VD",1,150,"a");
-SELECT habilitarCurso(101, "VD",1,150,"A");
+-- SELECT habilitarCurso(0006,"VD",1,150,"A");
+-- SELECT habilitarCurso(0006,"VD",1,150,"B");
+-- SELECT habilitarCurso(0006,"VD",2,150,"d");
+-- SELECT habilitarCurso(0006,"VD",3,150,"e");
+-- SELECT habilitarCurso(0007,"VD",1,150,"a");
+-- SELECT habilitarCurso(101, "VD",1,150,"A");
 
--- Asignar Horarios a Cursos -- 
-SELECT agregarHorario(1,1,'08:00-10:00');
-SELECT agregarHorario(1,2,'08:00-10:00');
-SELECT agregarHorario(1,3,'08:00-10:00');
-SELECT agregarHorario(1,4,'08:00-10:00');
-SELECT agregarHorario(1,5,'08:00-10:00');
+-- -- Asignar Horarios a Cursos -- 
+-- SELECT agregarHorario(1,1,'08:00-10:00');
+-- SELECT agregarHorario(1,2,'08:00-10:00');
+-- SELECT agregarHorario(1,3,'08:00-10:00');
+-- SELECT agregarHorario(1,4,'08:00-10:00');
+-- SELECT agregarHorario(1,5,'08:00-10:00');
 
-SELECT agregarHorario(2,1,'10:00-12:00');
-SELECT agregarHorario(2,2,'10:00-12:00');
-SELECT agregarHorario(2,3,'10:00-12:00');
-SELECT agregarHorario(2,4,'10:00-12:00');
-SELECT agregarHorario(2,5,'10:00-12:00');
+-- SELECT agregarHorario(2,1,'10:00-12:00');
+-- SELECT agregarHorario(2,2,'10:00-12:00');
+-- SELECT agregarHorario(2,3,'10:00-12:00');
+-- SELECT agregarHorario(2,4,'10:00-12:00');
+-- SELECT agregarHorario(2,5,'10:00-12:00');
 
-SELECT agregarHorario(3,1,'14:00-16:00');
-SELECT agregarHorario(3,2,'14:00-16:00');
-SELECT agregarHorario(3,3,'14:00-16:00');
-SELECT agregarHorario(3,4,'14:00-16:00');
-SELECT agregarHorario(3,5,'14:00-16:00');
-SELECT agregarHorario(3,6,'14:00-16:00');
-SELECT agregarHorario(3,7,'14:00-16:00');
+-- SELECT agregarHorario(3,1,'14:00-16:00');
+-- SELECT agregarHorario(3,2,'14:00-16:00');
+-- SELECT agregarHorario(3,3,'14:00-16:00');
+-- SELECT agregarHorario(3,4,'14:00-16:00');
+-- SELECT agregarHorario(3,5,'14:00-16:00');
+-- SELECT agregarHorario(3,6,'14:00-16:00');
+-- SELECT agregarHorario(3,7,'14:00-16:00');
 
-SELECT agregarHorario(4,1,'16:00-18:00');
-SELECT agregarHorario(4,2,'16:00-18:00');
-SELECT agregarHorario(4,3,'16:00-18:00');
+-- SELECT agregarHorario(4,1,'16:00-18:00');
+-- SELECT agregarHorario(4,2,'16:00-18:00');
+-- SELECT agregarHorario(4,3,'16:00-18:00');
 
--- Asignar Cursos --
+-- -- Asignar Cursos --
 
-SELECT asignarCurso(0006,"VD","b",202000001);
-SELECT asignarCurso(0006,"VD","b",202000002);
-SELECT asignarCurso(0006,"VD","b",202000003);
-SELECT asignarCurso(0007,"VD","a",202000001);
-SELECT asignarCurso(0007,"VD","a",202100001);
-SELECT asignarCurso(0007,"VD","a",202100002);
-SELECT asignarCurso(101,"VD","a",202200001);
+-- SELECT asignarCurso(0006,"VD","b",202000001);
+-- SELECT asignarCurso(0006,"VD","b",202000002);
+-- SELECT asignarCurso(0006,"VD","b",202000003);
+-- SELECT asignarCurso(0007,"VD","a",202000001);
+-- SELECT asignarCurso(0007,"VD","a",202100001);
+-- SELECT asignarCurso(0007,"VD","a",202100002);
+-- SELECT asignarCurso(101,"VD","a",202200001);
 
--- Desasignar Cursos --
+-- -- Desasignar Cursos --
 
-SELECT desasignarCurso(0007,"VD","a",202100002); 
-SELECT desasignarCurso(0007,"VD","a",202100001);
+-- SELECT desasignarCurso(0007,"VD","a",202100002); 
+-- SELECT desasignarCurso(0007,"VD","a",202100001);
 
--- Ingresar Notas --
+-- -- Ingresar Notas --
 
-SELECT ingresarNota(006,"VD","b","202000001",99.49);
-SELECT ingresarNota(006,"VD","b","202000002",99.49);
-SELECT ingresarNota(006,"VD","b","202000003",99.49);
-SELECT ingresarNota(007,"VD","a","202000001",60);
+-- SELECT ingresarNota(006,"VD","b","202000001",99.49);
+-- SELECT ingresarNota(006,"VD","b","202000002",99.49);
+-- SELECT ingresarNota(006,"VD","b","202000003",99.49);
+-- SELECT ingresarNota(007,"VD","a","202000001",60);
 
--- Generar Acta --
+-- -- Generar Acta --
 
-SELECT generarActa(101,"vd","A");
+-- SELECT generarActa(101,"vd","A");

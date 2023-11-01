@@ -9,6 +9,18 @@ CREATE PROCEDURE consultarAsignados(
     seccion_in VARCHAR(1)
 )
 BEGIN
+
+	declare err varchar(100);
+    
+    if not exists (select codigo_curso 
+    from CURSO
+    WHERE codigo_curso_in = codigo_curso) then
+    set err = "El curso no existe";
+    select err;
+    elseif (ciclo_in != "1S" and ciclo_in != "2S" and ciclo_in != "VJ" and ciclo_in != "VD") then
+    set err = "El ciclo no existe";
+    select err;
+    else
 	
     SELECT E.carnet, concat(E.nombres, " ", E.apellidos) AS "Nombre Completo", E.creditos AS "Créditos"
     FROM CURSO_ASIGNADO A
@@ -21,7 +33,8 @@ BEGIN
     WHERE codigo_curso_in = C.CURSO_codigo_curso
     AND ciclo_in = S.ciclo
     AND año_in = YEAR(S.año)
-    AND seccion_in = S.seccion
+    AND seccion_in = S.seccion;
+    end if
     ;
 
 END
