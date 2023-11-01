@@ -1,4 +1,4 @@
--- REGISTRO DE CARRERAS
+	-- REGISTRO DE CARRERAS
 SELECT crearCarrera('Ingenieria Civil');       -- 1  VALIDAR QUE LES QUEDE ESTE ID EN LA CARRERA CORRESPONDIENTE
 SELECT crearCarrera('Ingenieria Industrial');  -- 2  VALIDAR QUE LES QUEDE ESTE ID EN LA CARRERA CORRESPONDIENTE
 SELECT crearCarrera('Ingenieria Sistemas');    -- 3  VALIDAR QUE LES QUEDE ESTE ID EN LA CARRERA CORRESPONDIENTE
@@ -124,7 +124,8 @@ SELECT asignarCurso(101,"VD","a",202200001);
 
 -- Desasignar Cursos --
 
--- SELECT desasignarCurso(0006,"VD","b",202000001); 
+SELECT desasignarCurso(0007,"VD","a",202100002); 
+SELECT desasignarCurso(0007,"VD","a",202100001);
 
 -- Ingresar Notas --
 
@@ -132,3 +133,7 @@ SELECT ingresarNota(006,"VD","b","202000001",99.49);
 SELECT ingresarNota(006,"VD","b","202000002",99.49);
 SELECT ingresarNota(006,"VD","b","202000003",99.49);
 SELECT ingresarNota(007,"VD","a","202000001",60);
+
+-- Generar Acta --
+
+SELECT generarActa(101,"vd","A");

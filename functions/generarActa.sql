@@ -1,5 +1,4 @@
-drop function if exists generarActa;
-delete from ACTA where id_acta >= 0;
+
 -- CREATE FUNCTION generarActa --
 
 DELIMITER $$
@@ -20,8 +19,25 @@ BEGIN
         RETURN 'El curso no esta habilitado en el ciclo y seccion indicados';
     ELSEIF EXISTS(SELECT * FROM ACTA WHERE CURSO_HABILITADO_id_habilitado = (SELECT id_habilitado FROM CURSO_HABILITADO C INNER JOIN SECCION_CURSO_HABILITADO S ON C.id_habilitado = S.CURSO_HABILITADO_id_habilitado WHERE C.CURSO_codigo_curso = codigo_curso_in AND S.ciclo = ciclo_in AND S.seccion = seccion_in)) THEN
         RETURN 'El acta ya existe';
-    -- CHECK IF ALL STUDENTS ASSIGNED HAVE A GRADE --
-    ELSEIF EXISTS(SELECT * FROM CURSO_ASIGNADO A INNER JOIN CURSO_HABILITADO H ON CURSO_HABILITADO_id_habilitado = id_habilitado INNER JOIN SECCION_CURSO_HABILITADO S ON id_habilitado = S.CURSO_HABILITADO_id_habilitado WHERE CURSO_codigo_curso = codigo_curso_in AND S.seccion = seccion_in AND S.ciclo = ciclo_in AND NOT EXISTS(SELECT * FROM NOTA WHERE CURSO_HABILITADO_id_habilitado = H.id_habilitado AND ESTUDIANTE_carnet = A.ESTUDIANTE_carnet)) THEN
+    ELSEIF(
+        (SELECT count(*) 
+        FROM NOTA N
+        INNER JOIN CURSO_HABILITADO C
+        ON N.CURSO_HABILITADO_id_habilitado = C.id_habilitado
+        INNER JOIN SECCION_CURSO_HABILITADO S
+        ON C.id_habilitado = S.CURSO_HABILITADO_id_habilitado
+        WHERE "006" = C.CURSO_codigo_curso
+        AND "VD" = S.ciclo
+        AND "B" = S.seccion
+        )
+        <> 
+        (SELECT asignados FROM SECCION_CURSO_HABILITADO S
+        INNER JOIN CURSO_HABILITADO C
+        ON CURSO_HABILITADO_id_habilitado = id_habilitado
+        WHERE "006" = C.CURSO_codigo_curso
+        AND "VD" = S.ciclo
+        AND "B" = S.seccion)
+        ) THEN 
         RETURN 'No todos los estudiantes asignados tienen una nota ingresada';
     ELSE
         INSERT INTO ACTA(
@@ -39,4 +55,3 @@ END;
 $$
 DELIMITER ;
 
-SELECT generarActa(101,"vd","A");
