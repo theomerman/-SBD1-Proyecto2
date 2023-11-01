@@ -1,0 +1,143 @@
+show databases;
+
+create database proyecto2;
+
+-- CREATE TABLE DOCENTE -- 
+
+
+CREATE TABLE IF NOT EXISTS proyecto2.DOCENTE(
+    SIIF INT NOT NULL, 
+    nombres VARCHAR(50) NOT NULL,
+    apellidos VARCHAR(50) NOT NULL,
+    fecha_nacimiento DATE NOT NULL,
+    correo  VARCHAR(50) NULL,
+    telefono VARCHAR(10) NOT NULL,
+    direccion VARCHAR(200) NOT NULL,
+    dpi BIGINT NOT NULL,
+    fecha_creacion DATE NOT NULL,
+
+    PRIMARY KEY (SIIF)
+);
+
+-- CREATE TABLE CARRERA -- 
+
+CREATE TABLE IF NOT EXISTS proyecto2.CARRERA(
+    id_carrera INT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(50) NOT NULL,
+
+    PRIMARY KEY (id_carrera)
+);
+
+
+
+-- CREATE TABLE ESTUDIANTE--
+
+CREATE TABLE IF NOT EXISTS proyecto2.ESTUDIANTE (
+	carnet INT NOT NULL,
+	nombres VARCHAR(50) NOT NULL,
+	apellidos VARCHAR(50) NOT NULL,
+	fecha_nacimiento DATE NOT NULL,
+    correo VARCHAR(100) NOT NULL,
+    telefono VARCHAR(10) NOT NULL,
+    direccion VARCHAR(200) NOT NULL,
+    dpi BIGINT NOT NULL,
+    creditos INT NOT NULL,
+    fecha_creacion date NOT NULL,
+    CARRERA_id_carrera INT NOT NULL,
+
+	PRIMARY KEY (carnet),
+    FOREIGN KEY (CARRERA_id_carrera) REFERENCES CARRERA(id_carrera)
+
+);
+
+-- CREATE TABLE CURSO --
+
+CREATE TABLE IF NOT EXISTS proyecto2.CURSO(
+    codigo_curso INT NOT NULL,
+    nombre_curso VARCHAR(100) NOT NULL,
+    creditos_necesarios INT NOT NULL,
+    creditos_otorga INT NOT NULL,
+    obligatorio BOOLEAN NOT NULL,
+    CARRERA_id_carrera INT NOT NULL,
+
+    PRIMARY KEY (codigo_curso),
+    FOREIGN KEY (CARRERA_id_carrera) REFERENCES CARRERA(id_carrera)
+);
+
+
+-- CREATE TABLE CURSO_HABILITADO -- 
+
+CREATE TABLE IF NOT EXISTS proyecto2.CURSO_HABILITADO(
+    id_habilitado INT NOT NULL AUTO_INCREMENT,
+    CURSO_codigo_curso INT NOT NULL,
+    DOCENTE_SIIF INT NOT NULL,
+
+    PRIMARY KEY (id_habilitado),
+    FOREIGN KEY (CURSO_codigo_curso) REFERENCES CURSO(codigo_curso),
+    FOREIGN KEY (DOCENTE_SIIF) REFERENCES DOCENTE(SIIF)
+);
+
+-- CREATE TABLE SECCION_CURSO_HABILITADO --
+
+CREATE TABLE IF NOT EXISTS proyecto2.SECCION_CURSO_HABILITADO(
+    ciclo VARCHAR(2) NOT NULL,
+    cupo_maximo INT NOT NULL,
+    seccion VARCHAR(1) NOT NULL,
+    año DATE NOT NULL,
+    asignados INT NOT NULL,
+    CURSO_HABILITADO_id_habilitado INT NOT NULL,
+
+    FOREIGN KEY (CURSO_HABILITADO_id_habilitado) REFERENCES CURSO_HABILITADO(id_habilitado)
+);
+
+-- CREATE TABLE HORARIO_CURSO --
+
+CREATE TABLE IF NOT EXISTS proyecto2.HORARIO_CURSO(
+    dia integer NOT NULL,
+    horario VARCHAR(11) NOT NULL,
+    CURSO_HABILITADO_id_habilitado INT NOT NULL,
+
+    FOREIGN KEY (CURSO_HABILITADO_id_habilitado) REFERENCES CURSO_HABILITADO(id_habilitado)
+);
+
+-- CREATE TABLE ACTA --
+
+CREATE TABLE IF NOT EXISTS proyecto2.ACTA(
+    id_acta INT NOT NULL AUTO_INCREMENT,
+    fecha_hora DATETIME NOT NULL,
+    CURSO_HABILITADO_id_habilitado INT NOT NULL,
+
+    PRIMARY KEY (id_acta),
+    FOREIGN KEY (CURSO_HABILITADO_id_habilitado) REFERENCES CURSO_HABILITADO(id_habilitado)
+);
+
+-- CREATE TABLE CURSO_ASIGNADO --
+
+CREATE TABLE IF NOT EXISTS proyecto2.CURSO_ASIGNADO(
+    ESTUDIANTE_carnet INT NOT NULL,
+    CURSO_HABILITADO_id_habilitado INT NOT NULL,
+
+    FOREIGN KEY (ESTUDIANTE_carnet) REFERENCES ESTUDIANTE(carnet),
+    FOREIGN KEY (CURSO_HABILITADO_id_habilitado) REFERENCES CURSO_HABILITADO(id_habilitado)    
+);
+
+-- CREATE TABLE CURSO_DESASIGNADO -- 
+
+CREATE TABLE IF NOT EXISTS proyecto2.CURSO_DESASIGNADO(
+    ESTUDIANTE_carnet INT NOT NULL,
+    CURSO_HABILITADO_id_habilitado INT NOT NULL,
+
+    FOREIGN KEY (ESTUDIANTE_carnet) REFERENCES ESTUDIANTE(carnet),
+    FOREIGN KEY (CURSO_HABILITADO_id_habilitado) REFERENCES CURSO_HABILITADO(id_habilitado)    
+);
+
+-- CREATE TABLE NOTA --
+
+CREATE TABLE IF NOT EXISTS proyecto2.NOTA(
+    nota INT NOT NULL,
+    ESTUDIANTE_carnet INT NOT NULL,
+    CURSO_HABILITADO_id_habilitado INT NOT NULL,
+
+    FOREIGN KEY (ESTUDIANTE_carnet) REFERENCES ESTUDIANTE(carnet),
+    FOREIGN KEY (CURSO_HABILITADO_id_habilitado) REFERENCES CURSO_HABILITADO(id_habilitado)
+);
