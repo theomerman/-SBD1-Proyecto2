@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CFB13353-8AA4-5070-70B4-3CDDDB556668" name="HORARIO_CURSO">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-30 19:18:48 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="F2BC4480-3874-9738-50F5-D8FC116CB7BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="dia" id="53E3566C-7A49-3F63-0A28-AC9ACFAA1C2D">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-30 21:04:45 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="F2BC4480-3874-9738-50F5-D8FC116CB7BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="horario" id="67F516C4-6E75-4921-94FA-AD3CA2C39A7B">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-30 21:05:07 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="F2BC4480-3874-9738-50F5-D8FC116CB7BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_habilitado" id="6C2AF3E3-A1C3-36D0-2839-2C0317C93885">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:01:47 UTC</createdTime>
+<generatorID>FB543DB0-96FB-2740-B528-2716EE3F730F</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="F2BC4480-3874-9738-50F5-D8FC116CB7BD" value="true"/>
+</engineerTo>
+<referedAttribute>98042A43-BB58-49E6-E8DD-21696AE7D5A8</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C36B4A7A-0848-8D9E-A2B6-EA427A1BFE02" name="ESTUDIANTE">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>272B1BED-3922-95FC-6475-BA0F26AF0EAB</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="carnet" id="8B81C626-555E-3535-3047-7683862B04E4">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>EEE4FAC9-D01C-90E9-C63D-EBB2F25F1ECF</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombres" id="2FDAE6E8-DEF9-337B-9E72-6009D94AE457">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>114C1C67-CD9A-F02F-637F-0457FC729E18</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellidos" id="48CEA852-589D-0F5F-776A-1DA30F9A92EE">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>24042CD0-80AA-A004-D124-EEE3F90351AF</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nacimiento" id="D97F1A38-1DDF-E36D-F80B-6E75885D781C">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>451BA86E-AFE3-CF39-E136-FCA357948708</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="2F05DAC0-27A7-76CC-1C69-D873ADB09FD6">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>796BB583-BDCE-BF6A-6B4E-8708B997DECB</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefono" id="C8CA71E0-B855-DBD7-638E-BB91B7CF4C14">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>18BAF7FA-DB92-A312-357A-6B113E8B5695</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="0AA7C903-C92E-45FA-E7B1-6955014D854E">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>0BCD7600-96E9-9057-E5E3-63DC9C33D543</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dpi" id="92019568-49A1-D9E1-5EEA-F92949F86E0A">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>E8DE19A6-F5AD-B5AE-9902-F2CF268245F0</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="creditos" id="097A91A0-0F71-88AC-252B-BE1410D3B315">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>F4E9BEC9-B2EA-9078-5E42-AE01DF350D35</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_creacion" id="0DFAE6BE-D16E-E27D-4A93-21EAB843E7F4">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>D0987414-7684-B7C7-015F-5B90DAEF0524</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CARRERA_id_carrera" id="BC0C7AE8-DEEC-3D5D-C5CB-CD84D47CAEB9">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>E359D641-96E4-D672-E2F4-E7A04D246876</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="842CECE6-DA11-E1EA-2745-8CF0FB5D2AA9" referredColumn="05877E51-E72F-4C9D-E5EA-B1135D5898DF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E2C0A1CC-5230-497C-8AE9-C7E0A656A472" name="ESTUDIANTE_PK">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>06C0B897-EDF8-C7D5-3040-039EDAF1CF52</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B81C626-555E-3535-3047-7683862B04E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="32C7CB6B-4EB2-8E6A-549F-2BF84EE2C4A3" name="ESTUDIANTE_CARRERA_FK">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>E977C6B9-583C-95FA-2C60-8361CC3D9BBA</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC0C7AE8-DEEC-3D5D-C5CB-CD84D47CAEB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

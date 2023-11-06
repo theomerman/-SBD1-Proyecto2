@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E629893-D4CF-ECE1-9EB0-BFE2625ACBCD" name="CURSO_HABILITADO">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>CC481BA5-E93D-BE2C-E180-C7C5EDA316BE</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_habilitado" id="56E22DF0-DEA7-558C-5B79-DC4335571E9D">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>98042A43-BB58-49E6-E8DD-21696AE7D5A8</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CURSO_codigo_curso" id="AA4330A5-D73D-8740-726F-6393E70185BB">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>0E69F449-1D78-F55F-0C2B-32582771A6FC</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7213EC7A-3DF3-4858-7967-A0A967910C89" referredColumn="A4DFE7BC-4876-3792-1A25-60E287747D95"/>
+</associations>
+</Column>
+<Column name="DOCENTE_SIIF" id="F616501A-E528-4A06-8D8E-B6E7760183C7">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>5B80C32C-1699-4375-DB17-55DA1B832CD7</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F90CACB9-FE5F-E156-D4DD-BDDAC18F5753" referredColumn="5B9AF71B-AC73-9910-D385-E963F2A6E16F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE01D054-0673-1C80-3B7D-038DAA1F12F8" name="CURSO_HABILITADO_PK">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>C8C990B4-B396-856B-5045-6498F4D8EAC5</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56E22DF0-DEA7-558C-5B79-DC4335571E9D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="676F612E-03D0-8A35-F93E-4C1097F91A92" name="CURSO_HABILITADO_CURSO_FK">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>C8C32A4B-8E38-8B9A-955E-4D3E73373C9E</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA4330A5-D73D-8740-726F-6393E70185BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C0C8BAD-387D-75D5-8E38-F510D6BC6633" name="CURSO_HABILITADO_DOCENTE_FK">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>C11A4517-6BDE-EED0-012F-8745AE96B677</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F616501A-E528-4A06-8D8E-B6E7760183C7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

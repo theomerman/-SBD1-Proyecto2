@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F5136A3F-7B6C-0DF2-2AAB-60485E92A33C" containerWithKeyObject="0585AF3E-3D02-8013-D0A8-FD26B855932D" localFKIndex="6AAB4D14-486A-86A8-6781-8E4EF0A6CA5D" name="SECCION_CURSO_HABILITADO_CURSO_HABILITADO_FK">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>ED0056CC-1F72-8912-0D21-3860A78A132F</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<referredTableLongName>CURSO_HABILITADO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7E629893-D4CF-ECE1-9EB0-BFE2625ACBCD</referredTableID>
+<keyObject>FE01D054-0673-1C80-3B7D-038DAA1F12F8</keyObject>
+<referredKeyID>FE01D054-0673-1C80-3B7D-038DAA1F12F8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_habilitado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

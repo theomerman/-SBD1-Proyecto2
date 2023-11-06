@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD6DEBCF-3514-ABBF-1B08-2355ABA82287" name="NOTA">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>A67B80E4-D045-FB18-AC1A-4AB2B4AEDD12</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nota" id="CA8E831F-31B8-38E2-C095-9CE2EDFFC88D">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>FEC8B53F-D36B-2085-C918-88CF6CA93143</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTUDIANTE_carnet" id="B1999449-6FC4-89F6-0D64-1F39AEA7B97D">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>E10D0D14-89F6-19F9-05AF-3DFABF256937</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF197226-628B-F0C7-42D6-AA25073E473A" referredColumn="8B81C626-555E-3535-3047-7683862B04E4"/>
+</associations>
+</Column>
+<Column name="CURSO_HABILITADO_id_habilitado" id="B6D94D5F-ADF5-D99E-0D27-38B80CBACADC">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>C93A5F33-50C0-A04D-7C1A-F3815C73B2E8</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EA23DA71-8912-8280-F0A7-44A5CB3FD454" referredColumn="56E22DF0-DEA7-558C-5B79-DC4335571E9D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="677D547A-F901-FD11-4471-5CE2A5D1A29E" name="NOTA_ESTUDIANTE_FK">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>79DDA4EF-B53A-A5B9-7A6F-952C6A056680</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1999449-6FC4-89F6-0D64-1F39AEA7B97D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6E56684-F78C-FEEA-29B3-DB741946BC22" name="NOTA_CURSO_HABILITADO_FK">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:53:33 UTC</createdTime>
+<generatorID>7D208EE6-49B1-0AA1-1AFB-22A37E90B070</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6D94D5F-ADF5-D99E-0D27-38B80CBACADC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

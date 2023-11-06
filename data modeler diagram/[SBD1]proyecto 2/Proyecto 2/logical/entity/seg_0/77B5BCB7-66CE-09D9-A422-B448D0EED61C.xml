@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="77B5BCB7-66CE-09D9-A422-B448D0EED61C" name="ACTA">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:25:17 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="F2BC4480-3874-9738-50F5-D8FC116CB7BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_acta" id="6B2F7E0F-3F68-F55F-1046-B11347A4233C">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:25:48 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="F2BC4480-3874-9738-50F5-D8FC116CB7BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_hora" id="FD44307A-0409-2E8E-B5A1-511F1CB99377">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:25:21 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="F2BC4480-3874-9738-50F5-D8FC116CB7BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_habilitado" id="0281027C-525B-64EF-F447-55E1590C5CBB">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:26:08 UTC</createdTime>
+<generatorID>A5CE2DC9-EE50-E45C-DFA2-FE7286D958BB</generatorID>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<engineerTo>
+<item key="F2BC4480-3874-9738-50F5-D8FC116CB7BD" value="true"/>
+</engineerTo>
+<referedAttribute>98042A43-BB58-49E6-E8DD-21696AE7D5A8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="471D4272-1F0B-AF15-F1CF-01CCDE0B2457" name="ACTA PK">
+<createdBy>Theomerman</createdBy>
+<createdTime>2023-10-31 04:25:57 UTC</createdTime>
+<ownerDesignName>Proyecto 2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="F2BC4480-3874-9738-50F5-D8FC116CB7BD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6B2F7E0F-3F68-F55F-1046-B11347A4233C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
